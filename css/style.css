@@ -1,0 +1,193 @@
+*::selection {background-color: #e10b4f;color:white}
+
+html {scroll-behavior: smooth;}
+body{font-family: 'Roboto', sans-serif;padding: 20px;}
+body:before {content: '';position: fixed;right: 0;left: 0;top: 0;border-top: 20px solid white;z-index: 10;}
+
+header {position: relative;height: 120px;}
+header:before {content: '';position: absolute;left: 0;top: 0;right: 0;border-top: 140px solid #333333;z-index: -1;}
+
+header div.Logo {display: inline-block;vertical-align: top;}
+header div.Logo a {color: white;font-weight: bold;font-size: 33px;letter-spacing: 4.2px;border: 9px solid white;margin-top: 14px;padding: 0px 7px;text-align: center;}
+header div.Logo a p {line-height: 43px;}
+header div.Logo a p:last-child {font-weight: 100;letter-spacing: 3px;margin-top: -10px;}
+
+header div.social {margin-top: 10px;text-indent: 7px;display: inline-block;margin-left: -15px;}
+header div.social a {color: white;font-size: 14px;margin: 0px 4px;position: relative;vertical-align: middle;margin-top: -4px;}
+header div.social a:nth-child(2):before {content: '•';position: absolute;left: -12px;font-size: 15px;}
+header div.social a:nth-child(2):after {content: '•';position: absolute;right: -12px;font-size: 15px;}
+header div.social a img {margin-right: 2px;font-size: 13px;display: inline-block;width: 13px;align-items: center;filter: invert(1);margin-top: -3px;}
+header div.social a:hover {text-decoration: underline;}
+
+header div.Navigator {background-color: #333333;height: 108px;margin-right: -15px;position: fixed;right: 35px;left: 50.5%;top: 20px;transition: all ease .3s;z-index: 9;}
+header div.Navigator a.navLogo:hover {opacity: 1;}
+header div.Navigator a.navLogo {width: 100px;position: absolute;top: 33%;left: 10px;transform: translateY(-50%);transition: all ease .3s;opacity: 0;}
+header div.Navigator ul > li > a.active {border-bottom: 1px solid white;transition: all ease .4s;}
+header div.Navigator ul > li > a:before {content: '';position: absolute;left: 0;right: 0;bottom: 0;border-bottom: 1px solid gray;transition: all ease .2s;opacity: 0;}
+header div.Navigator ul > li > a:hover:before {opacity:1;}
+
+header.FixedHead div.Navigator {height: 70px;}
+header.FixedHead div.Navigator:before {content: '';position: absolute;right: 0;left: -99%;top: -1px;border-top: 1px solid #d8d8d800;box-shadow: -11px 5px 20px 8px #0000003b;}
+header.FixedHead div.Navigator a.navLogo {top: 50%;opacity: 1;}
+
+header div.Navigator ul {display: inline-flex;width: calc(100% - 160px);float: right;background-color: #333333;padding: 12px;justify-content: flex-end;}
+header div.Navigator ul > li {flex: inherit;text-align: right;margin: 5px 5px;white-space: nowrap;}
+header div.Navigator ul > li > a {color: white;font-weight: 100;letter-spacing: 1px;padding: 5px 6px;transition: all ease .4s;border-bottom: 1px solid transparent;position: relative;}
+
+
+section.slider {position: relative;height: calc(100vh - 40px - 125px);background-position: center;background-size: cover;display: flex;align-items: center;margin-top: -120px;z-index: -1;}
+section.slider div.slider-text {max-width: 1020px;margin: 0px auto;color: white;}
+section.slider div.slider-text h1 {font-size: 3rem;font-weight: 100;}
+section.slider div.slider-text h2 {font-size: 3rem;margin: 0px -10px;padding: 10px;}
+section.slider div.slider-text p {font-size: 1.2rem;margin-top: 30px;font-style: italic;font-weight: 100;}
+section.slider div.slider-text h2 div#writeText {font-size: 3rem;background-color: #00000030;margin: 0px -10px;padding: 10px;display: inline-block;}
+
+section.slider div.triangle-wrapper {color: #F9F9F9;pointer-events: none;background: #e10b4f;background: radial-gradient(#f52a2a,#006997);overflow: hidden;position: absolute;top: 0;left: 0;right: 0;z-index: -1;}
+section.slider div.triangle-wrapper svg {background-color: #b30847;background: radial-gradient(#ff000075, #ff000000,#00fff34d,#00fff3,#00fff3);}
+section.slider div.triangle-wrapper svg path{stroke: #000000;stroke-width: 0.07px;}
+
+
+
+section.working-card {background-color: #f1f1f1;padding: 40px 30px;}
+section.working-card div.item {}
+section.working-card div.item h4 {font-weight: bold;font-size: 1.3rem;}
+section.working-card div.item h4 p {display: inline-block;font-weight: 100;color: gray;font-size: 18px;margin-right: 9px;}
+section.working-card div.item > p {color: #333333;font-size: 17px;margin-bottom: 20px;font-weight: 100;padding-right: 16px;}
+section.working-card div.item div.icon {margin: 10px 0px;border-top: 1px solid gray;display: inline-block;width: 50px;padding-top: 10px;padding-right: 10px;}
+
+div.main-title h1 {padding: 70px 0px;text-align: center;font-size: 2.2rem;font-weight: bold;transition: all ease .4s;visibility: hidden;opacity: 0;padding: 0px 0px;margin: -20px 0px;}
+div.main-title h1 span {font-family: 'Pacifico', cursive;color: #d9306e;letter-spacing: 2px;font-weight: 100;text-decoration: underline;}
+div.main-title.active h1 {opacity: 1;visibility: visible;padding: 70px 0px;margin: 0;}
+
+
+section.referances {background-color: #f1f1f1;padding: 20px 30px;text-align: center;}
+section.referances a {display: inline-block;margin: 5px 15px;text-align: center;width: 100px;opacity: .4;transition: all ease .3s;}
+section.referances a:hover {opacity: 1;}
+section.referances a img {margin: 0 auto;}
+
+
+section.coffee {background-color: #f1f1f1;padding: 60px 30px;text-align: center;}
+
+
+section.coffee p {color: gray;font-size: 18px;font-weight: 100;}
+
+section.coffee form {margin-top: 20px;}
+section.coffee form input , section.coffee form select , section.coffee form textarea {color: gray;width: 100%;max-width: 570px;display: block;margin: 20px auto;padding: 13px 10px;background-color: #ffffff7d;border: 1px solid #d6d6d6;font-family: inherit;font-weight: 300;transition: all ease .4s;}
+section.coffee form textarea {height: 150px;max-height: 160px;min-height: 90px;}
+section.coffee form button {outline:none;font-family: inherit;background-color: #333333;border: 1px solid #333333;padding: 10px 21px;width: 100%;max-width: 570px;font-size: 15px;color: #f1f1f1;letter-spacing: 1px;font-weight: 500;position: relative;transition: all ease .5s;overflow: hidden;}
+section.coffee form input:focus, section.coffee form select:focus, section.coffee form textarea:focus {border: 1px solid gray;color: black;}
+section.coffee form button:hover {}
+section.coffee form button:before {content: '';position: absolute;left: -200px;top: 0;bottom: 0;width: 200px;background-color: #d9306e;transform: rotate(45deg);transition: all ease .4s;}
+section.coffee form button:hover:before {left: 300px;}
+section.coffee form button:active {background-color: #d9306e;}
+
+
+
+section.project {padding-top: 40px;padding-bottom: 20px;background-color: #f1f1f1;position: relative;z-index: 3;}
+header:before {content: '';position: absolute;left: 0;top: 0;right: 0;border-top: 140px solid #333333;z-index: -1;}
+
+section.project div.item {display: flex;overflow: hidden;}
+
+section.project a {width: 100%;height: 300px;align-items: center;position: relative;text-overflow: ellipsis;overflow: hidden;}
+section.project a p {position: absolute;right: 0;left: 0;text-align: center;bottom: -24px;color: white;transition: all ease .3s;white-space: nowrap;text-overflow: ellipsis;max-width: 100%;overflow: hidden;margin: 0px 31px;}
+section.project a div.content-wrapper {position: absolute;top: 50%;transform: translateY(-50%);text-align: center;right: 0;left: 0;color: white;font-weight: 100;}
+
+section.project a .bg {position: absolute;right: 0;left: 0;top: 0;bottom: 0;opacity: .4;transition: all ease .4s;}
+
+section.project a div.content-wrapper h6 {margin: 15px;font-weight: 100;}
+section.project a div.content-wrapper  h1 {font-weight: bold;margin: 15px;}
+
+section.project a p span {font-size: 14px;font-weight: 100;position: relative;z-index: 2;padding: 5px 10px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+section.project a p span:after {content: '';position: absolute;right: -5px;left: -5px;top: 0;z-index: -1;bottom: 0;background-color: #00000070;transition: all ease .4s;transform: scaleX(0);}
+section.project a p span:hover:after {transform: scaleX(1);}
+
+section.project a .bg-image {position: absolute;right: 0;left: 0;top: 0;bottom: 0;background-position: center;background-size: cover;z-index: -1;transition: all ease .4s;filter: blur(0px);}
+
+section.project a:hover .bg {opacity: .8;}
+section.project a:hover > p {bottom: 10px;}
+section.project a:hover .bg-image {transform: rotate(-3deg)  scale(1.05);filter: blur(4px);}
+
+section.project div.item.Last a {background-color: #c1c1c1;transition: all ease .4s;}
+section.project div.item.Last a div.content-wrapper h1 {color: #545454;transition: all ease .4s;}
+section.project div.item.Last a:hover {background-color: #980735;color:white;}
+section.project div.item.Last a:hover div.content-wrapper h1 {color: white;}
+
+.page-title {margin-top: 20px;}
+.page-title h1 {font-size: 40px;font-weight: bold;position: relative;z-index: 1;text-align: center;opacity: .4;background-color: #d8d8d8;padding-top: 40px;}
+.page-title h1 span {font-family: 'Pacifico';color: #980735;font-style: italic;font-weight: 100;font-size: 75%;margin-right: 10px;}
+
+
+header .hamburger {position: absolute;right: 0;filter: invert(.95);top: 0px;display: none;transition: all ease .4s;}
+header .ham {cursor: pointer;-webkit-tap-highlight-color: transparent;transition: transform 400ms;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;}
+header .hamRotate.active {transform: rotate(45deg);}
+header .hamRotate180.active {transform: rotate(180deg);}
+header .line {fill:none;transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;stroke:#000;stroke-width:5.5;stroke-linecap:round;}
+
+header .ham4 .top {stroke-dasharray: 40 121;}
+header .ham4 .bottom {stroke-dasharray: 40 121;}
+header .ham4.active .top {stroke-dashoffset: -68px;}
+header .ham4.active .bottom {stroke-dashoffset: -68px;}
+
+
+/* Responsive */
+@media only screen and (min-width: 1900px){
+	.col-larger {
+		flex: 0 0 20%;
+	}
+}
+
+@media only screen and (max-width: 1299px){
+	header div.Navigator ul > li > a {font-size: 14px;padding: 5px 4px;}
+}
+
+
+@media only screen and (max-width: 1199px){
+	header div.Navigator {left: 42%;}
+}
+
+
+@media only screen and (max-width: 991px){
+	header div.Logo {display: none;}
+	header div.Navigator {left: 20px;}
+	header div.Navigator a.navLogo {opacity: 1;width: 150px;margin-top: 15px;}
+
+	header.FixedHead div.Navigator a.navLogo {top: 50%;opacity: 1;width: 100px;margin-top: 0px;}
+	header.FixedHead div.Navigator:before {box-shadow: none;}
+
+	section.working-card div.item {text-align: center;}
+	section.working-card div.item > p {font-size: 14px;margin-bottom: 30px;}
+	section.working-card div.item div.icon {border-top: none;padding: 2px;}
+}
+
+
+@media only screen and (max-width: 768px){
+	section.slider div.slider-text p {font-size: 15px;}
+	section.slider div.slider-text h1 {font-size: 2.2rem;margin-top: 85px;}
+	section.slider div.slider-text h2 div#writeText {font-size: 2.2rem;}
+
+	section.working-card div.item {text-align: center;}
+	section.working-card div.item div.icon {border-top: none;padding: 2px;}
+	section.working-card div.item > p {font-size: 14px;margin-bottom: 30px;}
+}
+
+
+@media only screen and (max-width: 666px){
+	div.main-title h1 span {display: block;line-height: 40px;text-decoration: unset;font-size: 24px;}
+	div.main-title h1 {padding: 40px 0px;font-size: 1.8rem;}
+
+	header .hamburger{display: block;}
+	header.FixedHead .hamburger {top: -5px;}
+	header div.Navigator ul {position: fixed;display: block;width: 222px;float: unset;top: 0px;bottom: 0px;padding-top: 30px;left: -350px;transition: all ease .4s;}
+	header div.Navigator ul > li {text-align: center;margin: 10px;padding: 5px;}
+	header div.Navigator ul.active {left: 20px;}
+
+	section.referances a {width: 75px;margin: 3px 6px;}
+
+	section.coffee p {font-size: 15px;}
+	section.coffee,
+	section.working-card,
+	section.referances {padding: 60px 5px;}
+	section.coffee form input,
+	section.coffee form select,
+	section.coffee form textarea {font-size: 14px;background-size: 14px;}
+}
